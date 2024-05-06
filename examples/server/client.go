@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"net"
 	"time"
-	"zinx/zconf"
-	"zinx/zpack"
+
+	"github.com/adnpa/lotus/zconf"
+	"github.com/adnpa/lotus/zpack"
 )
 
 func main() {

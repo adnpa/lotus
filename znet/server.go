@@ -3,8 +3,9 @@ package znet
 import (
 	"fmt"
 	"net"
-	"zinx/zconf"
-	"zinx/ziface"
+
+	"github.com/adnpa/lotus/zconf"
+	"github.com/adnpa/lotus/ziface"
 )
 
 type Server struct {

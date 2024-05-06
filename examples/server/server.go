@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"zinx/ziface"
-	"zinx/znet"
+
+	"github.com/adnpa/lotus/ziface"
+	"github.com/adnpa/lotus/znet"
 	// "fmt"
 )
 
 func main() {
-	server := znet.NewServer("[zinxV0.7]")
+	server := znet.NewServer("[github.com/adnpa/lotusV0.7]")
 
 	server.SetOnConnStart(OnConnStart)
 	server.SetOnConnStop(OnConnStop)

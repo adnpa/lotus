@@ -3,7 +3,8 @@ package znet
 import (
 	"errors"
 	"sync"
-	"zinx/ziface"
+
+	"github.com/adnpa/lotus/ziface"
 )
 
 type ConnManager struct {
@@ -55,4 +56,3 @@ func (cm *ConnManager) ClearAllConn() {
 		delete(cm.connections, connId)
 	}
 }
-

@@ -3,7 +3,8 @@ package zconf
 import (
 	"encoding/json"
 	"os"
-	"zinx/ziface"
+
+	"github.com/adnpa/lotus/ziface"
 )
 
 type GlobalObj struct {
@@ -13,7 +14,6 @@ type GlobalObj struct {
 	TcpPort   int
 	Name      string
 
-	// zinx
 	Version          string
 	MaxConn          int
 	MaxPackageSize   uint32
@@ -24,7 +24,7 @@ type GlobalObj struct {
 var GGlobalObj *GlobalObj
 
 func (g *GlobalObj) Reload() {
-	data, err := os.ReadFile("conf/zinx.json")
+	data, err := os.ReadFile("conf/lotus.json")
 	if err != nil {
 		panic(err)
 	}
@@ -37,8 +37,8 @@ func (g *GlobalObj) Reload() {
 
 func init() {
 	GGlobalObj = &GlobalObj{
-		Name:             "ZinxServerApp",
-		Version:          "v0.4",
+		Name:             "github.com/adnpa/lotusServerApp",
+		Version:          "v0.1",
 		TcpPort:          8999,
 		Host:             "0.0.0.0",
 		MaxConn:          1000,

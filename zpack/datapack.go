@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
-	"zinx/zconf"
-	"zinx/ziface"
+
+	"github.com/adnpa/lotus/zconf"
+	"github.com/adnpa/lotus/ziface"
 )
 
 type Datapack struct {

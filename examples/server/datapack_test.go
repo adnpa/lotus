@@ -6,7 +6,8 @@ import (
 	"net"
 	"testing"
 	"time"
-	"zinx/zpack"
+
+	"github.com/adnpa/lotus/zpack"
 )
 
 func TestDataPack(t *testing.T) {

@@ -2,8 +2,9 @@ package znet
 
 import (
 	"fmt"
-	"zinx/zconf"
-	"zinx/ziface"
+
+	"github.com/adnpa/lotus/zconf"
+	"github.com/adnpa/lotus/ziface"
 )
 
 type MessageHandler struct {

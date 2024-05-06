@@ -6,9 +6,10 @@ import (
 	"io"
 	"net"
 	"sync"
-	"zinx/zconf"
-	"zinx/ziface"
-	"zinx/zpack"
+
+	"github.com/adnpa/lotus/zconf"
+	"github.com/adnpa/lotus/ziface"
+	"github.com/adnpa/lotus/zpack"
 )
 
 type Connection struct {
